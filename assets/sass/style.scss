@@ -28,19 +28,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 // Susy grid system. See: http://susydocs.oddbird.net/en/latest/
 @import 'susy';
 
-
 @import "vendors/include-media";
 
 @import "utils/variables";
 @import "utils/mixins";
 @import "utils/layouts";
-
-
-// @import "divi";
-//
-// // @import "sidebar";
-// @import "woocommerce";
-
 
 @import "base/base";
 @import "base/typography";
@@ -60,13 +52,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import "vendors/flexslider";
 
-
 .fl-builder-bar-title img,
 .jp-carousel-info {
   display: none !important;
 }
-
-
 
 .fl-module-content .fl-icon i, .fl-module-content .fl-icon i:before {
     border-radius: 0px !important;
