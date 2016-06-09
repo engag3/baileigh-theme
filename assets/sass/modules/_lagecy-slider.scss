@@ -1,0 +1,54 @@
+#slideshow {
+  overflow: hidden;
+
+  .item {
+    background: url('http://wordpress-19988-44316-118028.cloudwaysapps.com/wp-content/uploads/2016/05/welder-protective-equipment-sparks-hot-metal.jpg');
+    background-size: cover;
+    max-height: 700px !important;
+    min-height: 400px;
+    padding: 1rem;
+
+    img {
+      width: auto;
+      margin: auto;
+      box-shadow: 0 2px 8px rgba(#000000, 0.5);
+      border-radius: 5px;
+    }
+  }
+
+  .item:first-child {
+    position: relative;
+    display: block;
+  }
+
+  ul, ol {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.carousel-navigation {
+  display: none !important;
+}
+
+
+// Porfolio sideshow plugin
+.slideshow-wrapper {
+  padding: 1rem;
+
+  .slideshow-content {
+    // background: url('http://wordpress-19988-44316-118028.cloudwaysapps.com/wp-content/uploads/2016/05/welder-protective-equipment-sparks-hot-metal.jpg');
+    // background-size: cover;
+
+
+    img {
+      margin: 1rem auto !important;
+      box-shadow: 0 2px 8px rgba(#000000, 0.5);
+      border-radius: 5px;
+    }
+  }
+}

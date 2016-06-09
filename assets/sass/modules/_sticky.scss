@@ -1,0 +1,22 @@
+.sticky-wrapper {
+  > * {
+    z-index: 9 !important;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.sticky-wrapper.is-sticky {
+  > * {
+    z-index: 999 !important;
+  }
+}
+
+
+.admin-bar {
+  .sticky-wrapper.is-sticky {
+    > * {
+      top: 32px !important;
+    }
+  }
+}

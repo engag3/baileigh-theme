@@ -1,0 +1,83 @@
+.dashboard_links {
+
+  #menu-account-dashboard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &::before, &::after {
+      position: absolute;
+    }
+  }
+
+  .menu-item:first-child {
+    display: none;
+  }
+
+  .menu-item {
+
+    flex-basis: 48%;
+    margin-bottom: 2%;
+    padding: 3.5% 1%;
+    text-align: center;
+    border-radius: 8px;
+    border: solid 1px;
+    border-color: #242424 #232323 #1b1b1b #1d1d1d;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+
+    @extend .grd--soft ;
+
+    a {
+      display: block;
+      padding: 5%;
+      font-size: 2em;
+    }
+
+    i {
+      display: block;
+      font-size: 55px;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  .menu-item.account-root {
+
+  }
+
+
+  @include media(">=laptop") {
+    .menu-item {
+      flex-basis: 32%;
+    }
+  }
+}
+
+
+.account_panel .fl-row-content-wrap {
+  border-radius: 8px;
+  box-shadow: 0 1px 4px  rgba(#000000, 0.4);
+  overflow: hidden;
+}
+
+
+.woocommerce-MyAccount-content {
+  float: none;
+  width: 100%;
+}
+
+
+.user_profile-card {
+  background: rgba(#000000, 0.25);
+  border-radius: 5px;
+  padding: .5rem;
+
+  h4 {
+    margin-bottom: 0;
+  }
+
+  img {
+    float: right;
+    margin: .15rem;
+    border-radius: 8px;
+  }
+}

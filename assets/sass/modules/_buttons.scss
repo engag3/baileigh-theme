@@ -1,0 +1,44 @@
+button,
+.button,
+.btn,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 0;
+	border-radius: 0;
+  -webkit-border-radius: 0;
+
+	box-shadow: none;
+	line-height: 1;
+	padding: 12px 13px;
+  font-size: 1rem;
+	text-shadow: none;
+
+  max-width: 100%;
+  -webkit-appearance: none;
+
+  background: $clr__bg--input;
+  color: $clr__txt--input;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $clr__bg--input-active;
+    color: $clr__txt--input-active;
+  }
+
+}
+
+.ghost-button {
+	background-color: transparent;
+	opacity: .8;
+
+	&:hover, &:active, &:focus {
+		opacity: 1;
+		background-color: transparent;
+	}
+
+	i {
+		color: inherit;
+	}
+}

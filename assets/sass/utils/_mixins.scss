@@ -1,0 +1,122 @@
+
+// Heights
+@mixin height--10 {
+  														height: 100px;
+	@include media(">phone")  { height: 125px; }
+	@include media(">tablet") { height: 15vh;  }
+}
+
+@mixin height--25 {
+ 	 														height: 220px;
+	@include media(">phone")  { height: 240px; }
+	@include media(">tablet") { height: 25vh;  }
+}
+
+@mixin height--30 {
+	  													height: 260px;
+	@include media(">phone")  { height: 240px; }
+	@include media(">tablet") { height: 35vh;  }
+}
+
+@mixin height--50 {
+	  													height: 300px;
+	@include media(">phone")  { height: 400px; }
+	@include media(">tablet") { height: 50vh;  }
+}
+
+@mixin height--60 {
+	  													height: 350px;
+	@include media(">phone")  { height: 400px; }
+	@include media(">tablet") { height: 60vh;  }
+}
+
+@mixin height--75 {
+	  													height: 425px;
+	@include media(">phone")  { height: 600px; }
+	@include media(">tablet") { height: 75vh;  }
+}
+
+@mixin height--100 {
+  height: 620px;
+	@include media(">phone")  { height: 900px; }
+	@include media(">tablet") { height: 100vh; }
+}
+
+
+/*--------------------------------------------------------------
+# Adds
+--------------------------------------------------------------*/
+@mixin clean-list() {
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+
+
+/*--------------------------------------------------------------
+# Aligns
+--------------------------------------------------------------*/
+
+@mixin align-content--center() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@mixin align-content--left() {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate(5%,-50%);
+}
+
+@mixin align-content--right() {
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(-5%,-50%);
+}
+
+@mixin align-content--top() {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%,5%);
+}
+
+@mixin align-content--top-left() {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	transform: translate(5%,5%);
+}
+
+@mixin align-content--top-right() {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	transform: translate(-5%,5%);
+}
+
+@mixin align-content--bottom() {
+	position: absolute;
+	bottom: 10%;
+	right: 50%;
+	transform: translate(50%, -5%);
+}
+
+@mixin align-content--bottom-left() {
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+	transform: translate(5%, -5%);
+}
+
+@mixin align-content--bottom-right() {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	transform: translate(5%, -5%);
+}

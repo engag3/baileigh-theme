@@ -1,0 +1,49 @@
+// Some common variables and mixins to get you started.
+// Variables allow you to re-use colors, sizes, and other values without repeating
+// yourself. This means that changes that should be small, such as tweaking the
+// coloring or the sizing, can be done in one place, not all over the stylesheet.
+
+
+/*--------------------------------------------------------------
+# breakpoints
+--------------------------------------------------------------*/
+
+$breakpoints: (phone: 568px, tablet: 768px, laptop: 980px, desktop: 1250px, hd: 2000px);
+
+
+/*--------------------------------------------------------------
+# Widths
+--------------------------------------------------------------*/
+$content_main: 76em;
+$content_small: 62em;
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+// // Background
+$clr__bg--main: #fff;
+$clr__bg--strong: #2E2C32;
+$clr__bg--soft: #141414;
+
+$clr__bg--input: #eee;
+$clr__txt--input: #333;
+
+$clr__bg--input-active: #ccc;
+$clr__txt--input-active: #222;
+
+// Text
+$clr__txt--main: #333;
+$clr__txt--strong: #969696;
+$clr__txt--soft: #656565;
+
+// Heilights
+$clr__hlt--main: #e89211;
+$clr__hlt--strong: #da6200;
+$clr__hlt--soft: #408aa6;
+
+$clr__btn--main: #408aa6;
+$clr__btn--hover: #2da1cd;
+
+
+// Font fam
+$copy-font: "Roboto Condensed", Arial, sans-serif;

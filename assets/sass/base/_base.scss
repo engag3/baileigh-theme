@@ -1,0 +1,82 @@
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+	min-width: 300px;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow-x: hidden;
+	background-size: cover;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	outline: 0 !important;
+
+	box-sizing: border-box;
+
+	&:focus {
+		outline: 0 !important;
+	}
+
+	&:before,
+	&:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	 box-sizing: border-box;
+ }
+}
+
+
+@include media(">=tablet") {
+  .col-full {
+    max-width: $content_main;
+  }
+
+  .site-content {
+    overflow: hidden;
+  }
+
+  // #secondary {
+  //   position: relative;
+  //   padding-left: 2rem;
+	//
+  //   &::before {
+  //     content: '';
+  //     z-index: -1;
+  //     position: absolute;
+  //     width: 1px;
+  //     left: 0;
+  //     top: -50%;
+  //     height: 200%;
+  //     background: $clr__bg--soft;
+  //   }
+  // }
+}
+
+
+.page-template-blank-slate,
+.page-template-edge,
+.page-template-account {
+
+	.site-content .col-full,
+	.site-content .content-area {
+		max-width: none;
+	  width: 100%;
+	  padding: 0;
+	  margin: 0;
+	}
+
+	.site-main,
+	.hentry {
+		margin: 0 !important;
+	}
+
+	.hentry,
+	.woocommerce-breadcrumb {
+		margin-bottom: 0 !important;
+	}
+
+}

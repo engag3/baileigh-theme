@@ -1,0 +1,37 @@
+.site-footer {
+  border-top: solid 10px $clr__hlt--main;
+}
+
+.footer_logo {
+  text-align: center;
+
+  a {
+    display: inline-block;
+    opacity: .7;
+
+    width: 20%;
+    max-width: 80px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  img {
+
+  }
+}
+
+@include media("<tablet") {
+  .site-footer,
+  .site-footer * {
+    text-align: center !important;
+  }
+
+  .site-footer .footer-squares {
+    img {
+      float: none !important;
+      margin: 1em .25em !important;
+    }
+  }
+}

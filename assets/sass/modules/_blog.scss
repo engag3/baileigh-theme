@@ -1,0 +1,321 @@
+.fl-post-grid-post {
+  box-shadow: 0 1px 0 rgba(#000000, 0.4);
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.fl-post-grid-image {
+  border-bottom: solid 4px $clr__hlt--main;
+
+  img.wp-post-image {
+    margin-bottom: -1px;
+  }
+}
+
+.fl-post-grid-meta {
+  padding: 0 1rem;
+}
+
+.fl-post-grid-text {
+  padding: 0;
+}
+
+.fl-post-grid-text h2.fl-post-grid-title {
+  padding: 1rem ;
+  padding-top: 1.25em;
+  padding-bottom: 0;
+  font-weight: 500;
+}
+
+.fl-post-grid-image + .fl-post-grid-text h2.fl-post-grid-title {
+  padding-top: .5em;
+}
+
+.fl-post-grid-content {
+  padding: 0 1em 1em 1em;
+}
+
+
+
+
+
+.blog, .single-post {
+
+  .content-area,
+  .widget-area {
+    padding-top: 3rem;
+  }
+
+  .post {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(#000000, 0.25);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .post.hentry.type-post .entry-meta,
+  .post.hentry.type-post .entry-content {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+
+  .post_banner {
+    background: #333;
+
+    img {
+      width: 100%;
+      margin: 0 !important;
+      border-radius: 0;
+      border-bottom: solid 7px $clr__hlt--main  ;
+    }
+  }
+
+
+  .entry-title,
+  .posted-on,
+  .entry-content {
+    padding: .25em 1rem;
+  }
+
+  .entry-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .entry-title {
+    padding-top: 1rem;
+    order: 1;
+  }
+
+  .posted-on {
+    order: 2;
+  }
+
+}
+
+
+.fl-builder-content a.fl-button,
+.fl-builder-content a.fl-button:visited,
+.more-link,
+.fl-post-grid-more {
+  display: inline-block;
+  line-height: 18px;
+  padding: 12px 24px;
+  background: $clr__btn--main;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+
+  span, i {
+    color: #fff;
+  }
+}
+
+
+.fl-post-grid-more {
+  display: inline-block;
+  line-height: 18px;
+  padding: 8px 12px;
+  background: $clr__btn--main;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+
+  span, i {
+    color: #fff;
+  }
+}
+
+.fl-builder-content a.fl-button:hover {
+  background: $clr__btn--hover;
+}
+
+.more-link,
+.fl-post-grid-more {
+  margin: 1rem 0;
+  float: right;
+}
+
+
+
+
+.section_title  {
+  h1, h2, h3, h4, h5, h6 {
+    background: $clr__hlt--main;
+    display: inline-block;
+  }
+
+  .fl-heading-text {
+    display: block;
+    padding: .75rem 1.5rem;
+  }
+}
+
+.page-title {
+  // h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+    background: $clr__hlt--main;
+    padding: .75rem 1.5rem;
+    margin-top: 2rem;
+  // }
+}
+
+
+
+.entry-title {
+  font-size: 1rem;
+
+  @include media(">=laptop") {
+    font-size: 1.7rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.brick {
+  display: inline-block;
+  padding: .5em;
+  vertical-align: top;
+
+  img {
+    width: 100%;
+  }
+}
+
+.brick > div {
+  background: #fff;
+  position: relative;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.4);
+  border: solid 1px #ccc;
+  border-radius: 3px;
+}
+
+.posts_grid {
+
+  a {
+    color: $clr__txt--main;
+  }
+
+  .post_thumbnail {
+    background: #111;
+    border-bottom: solid 7px $clr__hlt--main  ;
+
+    img {
+      margin-bottom: 0;
+    }
+  }
+
+  .post_title {
+    margin: 0;
+    padding: .5rem;
+  }
+
+  .post_content.basic {
+    max-height: 11.5em;
+    overflow: hidden;
+    padding: .5em;
+  }
+
+  .post_content.repost {
+
+    p:first-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      margin-bottom: 0;
+      border-bottom: solid 7px $clr__hlt--main  ;
+    }
+
+    p {
+      padding: .5em;
+    }
+  }
+
+  .repost-content {
+    padding: .5em;
+  }
+
+  .read_more {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding:0 1em;
+
+    background: #fff;
+
+    a i {
+      color: #000;
+    }
+
+    &::before {
+      content: '';
+      height: 3em;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: -3em;
+
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+96 */
+      background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 96%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 96%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+    }
+  }
+
+
+}
+
+.col-2 .brick,
+.col-3 .brick {
+  width: 100%;
+}
+
+
+@include media(">=tablet") {
+
+  .col-2 .brick,
+  .col-3 .brick {
+    width: 49.6%;
+  }
+
+}
+
+@include media(">=laptop") {
+
+  .col-3 .brick {
+    width: 32.99%;
+  }
+
+}
+
+
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+  margin-bottom: 2em;
+}
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

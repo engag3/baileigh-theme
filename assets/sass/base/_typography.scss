@@ -1,0 +1,110 @@
+body {
+  letter-spacing: 2px;
+  // font-family: $e3-copy-font;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  // font-weight: 300;
+
+  a {
+    font-weight: 300;
+  }
+
+  i {
+    color: $clr__hlt--main;
+    font-weight: inherit;
+    font-size: inherit;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+
+h1, h2 {
+  // font-family: $e3-regular-font;
+}
+
+p {
+  // font-weight: 900;
+}
+
+blockquote {
+  // font-family: $e3-light-font;
+}
+
+
+em strong,
+strong em {
+  color: $clr__hlt--main;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.big {
+  font-size: 3rem;
+}
+
+
+a {
+  transition: all .3s;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+hr {
+  opacity: .5;
+}
+
+mark {
+  color: $clr__hlt__strong;
+}
+
+
+// font sizing
+
+.alpha, h1 {
+  font-size: 1.7em;
+}
+
+
+.beta, h2,
+.woocommerce-MyAccount-content h2 {
+  font-size: 1.4em;
+}
+
+.gamma, h3 {
+  font-size: 1.2em;
+}
+
+.delta, h4 {
+  font-size: 1.1em;
+}
+
+
+@include media("<=tablet") {
+
+  body {
+    font-size: .9em;
+  }
+
+  .alpha, h1 {
+    font-size: 1.3em;
+  }
+
+  .beta, h2,
+  .woocommerce-MyAccount-content h2 {
+    font-size: 1.2em;
+  }
+
+  .gamma, h3 {
+    font-size: 1.1em;
+  }
+
+  .delta, h4 {
+    font-size: 1.05em;
+  }
+
+}
